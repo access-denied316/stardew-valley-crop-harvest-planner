@@ -75,6 +75,10 @@ irrigated (bool)
 
 '''
 
+current_day = 0  # max day 28
+season = 0  # max season 4 (winter)
+farm_name = ""
+
 
 class Crop:
     def __init__(self, name, planted, to_harvest, irrigated):
@@ -85,9 +89,14 @@ class Crop:
 
 
 def main():
-    current_day = 0  # max day 28
-    season = 1  # max season 3 (winter)
+
     farm_name = input("Farm name: ")
+    print("1. Spring")
+    print("2. Summer")
+    print("3. Fall")
+    print("4. Winter")
+    season = input("Current Season: ")
+    current_day = input("Current day: ")
 
     save_data = [
         farm_name,
@@ -108,6 +117,14 @@ def main():
 
     print(save_data)
 
+
+# def crops():
+#     print()
+# do some funny crop business here
+# enter day and what crop was planted
+# go in a loop until user is finished
+# notify user of what gets harvested
+# proceed to next day
 
 if __name__ == "__main__":
     main()
