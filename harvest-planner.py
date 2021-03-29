@@ -75,11 +75,6 @@ irrigated (bool)
 
 '''
 
-current_day = 0  # max day 28
-season = 0  # max season 4 (winter)
-farm_name = ""
-
-
 class Crop:
     def __init__(self, name, planted, to_harvest, irrigated):
         self.name = name
@@ -87,44 +82,15 @@ class Crop:
         self.to_harvest = to_harvest
         self.irrigated = irrigated
 
+currentDay = 1
+
+def advanceDay():
+    global currentDay
+    currentDay += 1
 
 def main():
-
-    farm_name = input("Farm name: ")
-    print("1. Spring")
-    print("2. Summer")
-    print("3. Fall")
-    print("4. Winter")
-    season = input("Current Season: ")
-    current_day = input("Current day: ")
-
-    save_data = [
-        farm_name,
-        season,
-        current_day
-    ]
-
-    if os.path.exists(farm_name + savefile_ext):
-        print("loading previous farm")
-        save_data = pickle.load(open(farm_name + savefile_ext, "rb"))
-
-    else:
-        print("nah")
-        pickle.dump(save_data, open(farm_name + savefile_ext, "wb"))
-        print("but now yep")
-
-    print(pickle.load(open(farm_name + savefile_ext, "rb")))
-
-    print(save_data)
-
-
-# def crops():
-#     print()
-# do some funny crop business here
-# enter day and what crop was planted
-# go in a loop until user is finished
-# notify user of what gets harvested
-# proceed to next day
+    global currentDay
+    print(f"The current day is {currentDay}")
 
 if __name__ == "__main__":
     main()
