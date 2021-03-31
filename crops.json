@@ -1,0 +1,54 @@
+{
+    "spring": {
+        "blue_jazz": 7,
+        "cauliflower": 12,
+        "coffee_bean": [10, 2],
+        "garlic": 4,
+        "green_beans": [10, 3],
+        "kale": 6,
+        "parsnip": 4,
+        "potato": 6,
+        "rhubard": 13,
+        "strawberry": [8, 3],
+        "tulip": 6,
+        "unmilled_rice": [6, 8]
+    },
+    "summer": {
+        "blueberry": [13, 4],
+        "corn": [14, 4],
+        "hops": [11, 1],
+        "hot_pepper": [5, 3],
+        "melon": 12,
+        "poppy": 7,
+        "radish": 6,
+        "red_cabbage": 9,
+        "starfruit": 13,
+        "summer_spangle": 8,
+        "sunflower": 8,
+        "tomato": [11, 4],
+        "wheat": 4
+    },
+    "fall": {
+        "amaranth": 7,
+        "artichoke": 8,
+        "beet": 6,
+        "bok_choy": 4,
+        "corn": [14, 4],
+        "cranberries": [7, 5],
+        "eggplant": [5, 5],
+        "fairy_rose": 12,
+        "grape": [10, 3],
+        "pumpkin": 13,
+        "sunflower": 8,
+        "wheat": 4,
+        "yam": 10
+    },
+    "special": {
+        "ancient_fruit": [28, 7],
+        "cactus_fruit": [12, 3],
+        "pineapple": 14,
+        "taro_root": [7, 10],
+        "sweet_gem_berry": 24,
+        "tea_leaves": [20, 1]
+    }
+}

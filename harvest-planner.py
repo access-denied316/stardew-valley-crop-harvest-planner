@@ -9,7 +9,7 @@ savefile_ext = ".sav"
 
 # Crops lists and time to harvest
 
-spring_crops = {
+spring = {
     "Blue Jazz": 7,
     "Cauliflower": 12,
     "Coffee Bean": [10, 2],
@@ -24,7 +24,7 @@ spring_crops = {
     "Unmilled Rice": [6, 8]  # depends if irrigated or not (in that order)
 }
 
-summer_crops = {
+summer = {
     "Blueberry": [13, 4],
     "Corn": [14, 4],
     "Hops": [11, 1],
@@ -40,7 +40,7 @@ summer_crops = {
     "Wheat": 4,
 }
 
-fall_crops = {
+fall = {
     "Amaranth": 7,
     "Artichoke": 8,
     "Beet": 6,
@@ -56,7 +56,7 @@ fall_crops = {
     "Yam": 10,
 }
 
-special_crops = {
+special = {
     "Ancient Fruit": [28, 7],
     "Cactus Fruit": [12, 3],
     "Pineapple": 14,
@@ -81,6 +81,9 @@ class Crop:
         self.planted = planted
         self.to_harvest = to_harvest
         self.irrigated = irrigated
+    
+    def toString():
+        return f"{name}, {planted}, {to_harvest}, {irrigated}"
 
 currentDay = 1
 
@@ -91,6 +94,8 @@ def advanceDay():
 def main():
     global currentDay
     print(f"The current day is {currentDay}")
+    testCrop = Crop("Ancient Fruit", 3, 28, 0)
+    print(testCrop.toString())
 
 if __name__ == "__main__":
     main()
